@@ -118,6 +118,7 @@ def newcomer(file_name):
             check = input('Is this right? \n >> ')
             if 'y' in check.lower():
                 gradebook[new_student] = [new_student, newcomer_sex, []]
+                break
     
     with open(file_name, 'w') as file_obj:
         json.dump(gradebook, file_obj)
